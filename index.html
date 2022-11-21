@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/node_modules/swiper/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav
+      class="bg-white border-gray-200 px-2 sm:px-4 py-2 mt-2 w-3/4 mx-auto navbar"
+    >
+      <div class="container mx-auto">
+        <div class="flex space-x-5 items-center">
+          <div class="grow text-xl">
+            <a href="#">Mo-Food</a>
+          </div>
+          <div class="hidden md:flex items-center space-x-6 nav-components">
+            <a href="#" class="active">Home</a>
+            <a href="#">Categories</a>
+            <button class="btn-auth register">Sign Up</button>
+            <button class="btn-auth login">Sign In</button>
+          </div>
+          <div
+            class="md:hidden flex items-end hover:cursor-pointer border px-4 py-2 rounded"
+          >
+            <button class="mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-gray-500"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hidden mobile-menu lg:hidden">
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              class="block text-center text-sm px-2 py-4 text-gray-600 active"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html"
+              class="block text-center text-sm px-2 py-4 text-gray-600"
+              >Categories</a
+            >
+          </li>
+          <li>
+            <button class="btn-auth register">Sign Up</button>
+          </li>
+          <li>
+            <button class="btn-auth login">Sign In</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <section class="relative lg:h-[480px] w-3/4 m-auto mt-9">
+      <div class="swiper w-full h-full rounded-lg carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide block w-full h-full object-cover">
+            <img src="/images/Carousel-1.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/Carousel-2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/Carousel-3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Carousel End -->
+
+    <!-- Categories Start -->
+    <section class="categories-list">
+      <div class="categories-title">
+        <h5>Categories</h5>
+      </div>
+      <div
+        class="categories-content grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 w-3/4 mx-auto mt-12 gap-6"
+      >
+        <a href="#" class="mx-auto">
+          <div>
+            <img src="/images/categories-gadgets-1.svg" alt="" class="w-32" />
+          </div>
+        </a>
+        <a href="#" class="mx-auto">
+          <div>
+            <img src="/images/categories-gadgets-2.svg" alt="" class="w-32" />
+          </div>
+        </a>
+        <a href="#" class="mx-auto">
+          <div>
+            <img src="/images/categories-gadgets-3.svg" alt="" class="w-32" />
+          </div>
+        </a>
+        <a href="#" class="mx-auto">
+          <div>
+            <img src="/images/categories-gadgets-4.svg" alt="" class="w-32" />
+          </div>
+        </a>
+        <a href="#" class="mx-auto">
+          <div>
+            <img src="/images/categories-gadgets-5.svg" alt="" class="w-32" />
+          </div>
+        </a>
+        <a href="#" class="mx-auto">
+          <div>
+            <img src="/images/categories-gadgets-6.svg" alt="" class="w-32" />
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- Categories End -->
+
+    <!-- Menu Discount Start -->
+    <section class="discount-list">
+      <div class="discount-title">
+        <h5>Discount Up to 60%</h5>
+      </div>
+      <div class="swiper discount-content w-3/4 mt-12">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/images/product-boba.png" alt="" />
+              <div class="name text-slate-900">Boba Brown Sugar</div>
+              <div class="price t">Rp25.000</div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/images/product-french-fries.png" alt="" />
+              <div class="name text-slate-900">French Fries</div>
+              <div class="price t">Rp15.000</div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/images/product-latte-coffee.png" alt="" />
+              <div class="name text-slate-900">Coffee Latte</div>
+              <div class="price t">Rp20.000</div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/images/product-salad-sayur.png" alt="" />
+              <div class="name text-slate-900">Vegetable Salad</div>
+              <div class="price t">Rp45.000</div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/images/product-boba.png" alt="" />
+              <div class="name text-slate-900">Boba Brown Sugar</div>
+              <div class="price t">Rp25.000</div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/images/product-french-fries.png" alt="" />
+              <div class="name text-slate-900">French Fries</div>
+              <div class="price t">Rp15.000</div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/images/product-latte-coffee.png" alt="" />
+              <div class="name text-slate-900">Coffee Latte</div>
+              <div class="price t">Rp20.000</div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/images/product-salad-sayur.png" alt="" />
+              <div class="name text-slate-900">Vegetable Salad</div>
+              <div class="price t">Rp45.000</div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination mt-8 relative"></div>
+      </div>
+    </section>
+    <!-- Menu Discount End -->
+    <script src="/script/script.js"></script>
+  </body>
+</html>

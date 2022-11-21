@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-auth {
+    @apply border border-green-700 px-6 py-1 rounded-md hover:delay-100;
+  }
+  .navbar .active {
+    @apply text-green-500;
+  }
+  .nav-components a {
+    @apply text-gray-600 hover:text-black;
+  }
+  .register {
+    @apply text-green-700 hover:bg-green-700 hover:text-white h-12;
+  }
+  .navbar .login {
+    @apply bg-green-700 hover:bg-green-900 text-white h-12;
+  }
+  li > * {
+    @apply block mx-auto w-full;
+  }
+  ul {
+    @apply space-y-3;
+  }
+  h5 {
+    @apply text-center font-semibold text-lg text-green-500;
+  }
+  section {
+    @apply mt-16;
+  }
+}
